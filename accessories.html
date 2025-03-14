@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Motorcycle Parts & Accessories</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/parts&accessories.css" />
+  </head>
+  <body class="bg-black text-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Lapuk Garage</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="parts.html">Parts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="accessories.html">Accessories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="brands.html">Brands</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Helmet Showcase Carousel -->
+    <section class="container my-1 bg-transparent">
+      <h2 class="text-center mb-4">EXPERIENCE THE BEST</h2>
+      <div id="helmetCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#helmetCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#helmetCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#helmetCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/pics/bike1.jpg" class="d-block w-100" alt="Helmet 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Full-Face Helmet</h5>
+              <p>Maximum protection for every ride.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/pics/bike2.jpg" class="d-block w-100" alt="Helmet 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Modular Helmet</h5>
+              <p>Flexibility with an open-face option.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/pics/bike3.jpg" class="d-block w-100" alt="Helmet 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Off-Road Helmet</h5>
+              <p>Designed for extreme adventure.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#helmetCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#helmetCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Helmet Categories -->
+    <section class="container my-5 bg-transparent">
+      <h2 class="text-center mb-4">Helmet Types</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="img/pics/31tq0tILsgL.png" class="card-img-top" alt="STUDDS TROOPER DV MOTORCYCLE MODULAR HELMET">
+            <div class="card-body">
+              <h5 class="card-title">STUDDS TROOPER DV MOTORCYCLE MODULAR HELMET</h5>
+              <p class="card-text">Modular and versatile, offering safety and comfort for city commutes and long rides.</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helmetModal1">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="img/pics/Oneal.png" class="card-img-top" alt="O'NEAL EX-SRS MX HELMET">
+            <div class="card-body">
+              <h5 class="card-title">O'NEAL EX-SRS MX HELMET</h5>
+              <p class="card-text">Durable and lightweight, designed for maximum protection and comfort in off-road adventures.</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helmetModal2">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="img/pics/Infinity.png" class="card-img-top" alt="LS2 OF603 INFINITY II MOTORCYCLE OPEN FACE HELMET">
+            <div class="card-body">
+              <h5 class="card-title">LS2 OF603 INFINITY II MOTORCYCLE OPEN FACE HELMET</h5>
+              <p class="card-text">Stylish and lightweight, offering comfort and ventilation for city rides and touring.</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helmetModal3">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="img/pics/Visor.png" class="card-img-top" alt="AGV FULL FACE HELMET VISORS">
+            <div class="card-body">
+              <h5 class="card-title">AGV FULL FACE HELMET VISORS</h5>
+              <p class="card-text">Durable and clear, providing optimal visibility and protection for all riding conditions.</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helmetModal4">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="img/pics/Nolan.png" class="card-img-top" alt="NOLAN N30-4 T CLASSIC HELMET">
+            <div class="card-body">
+              <h5 class="card-title">NOLAN N30-4 T CLASSIC HELMET</h5>
+              <p class="card-text">Versatile and well-ventilated, designed for urban mobility and casual riding comfort.</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helmetModal5">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="img/pics/Spoiler.png" class="card-img-top" alt="LS2 FF353 HELMET SPOILER">
+            <div class="card-body">
+              <h5 class="card-title">LS2 FF353 HELMET SPOILER</h5>
+              <p class="card-text">Aerodynamic and stylish, enhancing stability and performance at high speeds.</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helmetModal6">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Helmet Details Modals -->
+    <div class="modal fade" id="helmetModal1" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">STUDDS TROOPER DV MOTORCYCLE MODULAR HELMET</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <h2>Description</h2>
+            <p>Trooper DV is a flip-up full-face helmet with product features like a higher impact outer shell and UV-resistant paint, regulated density EPS, hypoallergenic liner, quick-release visor, and quick-release chin strap. Trooper DV comes in various sizes and color options.</p>
+            <h2>Specification</h2>
+            <ul>
+              <li>Hypoallergenic Liner</li>
+              <li>Quick Release Visor</li>
+              <li>Regulated Density EPS</li>
+              <li>UV Resistant Paint</li>
+              <li>Quick Release Chin Strap</li>
+              <li>Higher Impact Resistant Outer Shell</li>
+              <li>Rust-proof Stainless-Steel Buckle</li>
+              <li>Replaceable Liner</li>
+              <li>Removable and Replaceable Lower Trim</li>
+              <li>NO Helmet String Bag included</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="helmetModal2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">O'NEAL EX-SRS MX HELMET</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <h2>Description</h2>
+            <p>REVOLUTIONARY MX HELMET THAT TAKES LIGHTNESS, SAFETY AND COMFORT TO A NEW LEVEL.</p>
+            <p>It is the 1st helmet on the market with integrated Airflaps™ (for self-assembly) and packed with features for your all-day riding adventure. Perfect for a wide range of conditions, temperatures and challenges with complete control for your individual needs. Experience it!</p>
+            <h2>Specifications</h2>
+            <ul>
+              <li>Newly developed helmet with 2 out-shells and 3EPS for increased safety and perfect fit</li>
+              <li>Shell is produced with high-quality ABS</li>
+              <li>Maximized comfort through diverse, adjustable and closable ventilation channels for individual airflow</li>
+              <li>Innovatively integrated Airflaps™ fixation in the helmet shell for optional use, Airflaps included</li>
+              <li>Ready for Quin Smart Safety Sensor Installation</li>
+              <li>Easy and quick cheek pad removal with E.Q.R.S. system with emergency straps</li>
+              <li>Integrated loops for optimum hydration hose guidance</li>
+              <li>More safety in the event of a crash thanks to the height-adjustable visor, which is attached with breakaway plastic screws</li>
+              <li>Double-D safety lock with easy strap adjustment for perfect individual fit</li>
+              <li>Optimum comfort and perfect sweat absorption thanks to the padded lining with antibacterial Polygiene® treatment, removable and washable</li>
+              <li>Prepared for Winter-Facemask installation</li>
+              <li>Increased protection with the rubber roost nose guard</li>
+              <li>Bluetooth Ready with internal speaker cavities and rubber hoop at back of the helmet (Bluetooth unit not included)</li>
+              <li>Incorporating IPX® Acells rotational impact absorption technology optional available</li>
+              <li>GoPro® Mount as optional spare part available</li>
+              <li>Meets new ECE 22.06 test standards for increased safety</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="helmetModal3" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">LS2 OF603 INFINITY II MOTORCYCLE OPEN FACE HELMET</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <h2>Description</h2>
+            <p>Perfect for driving on city roads and highways. Shell made of HPFC. Maximum ventilation with its two upper air inlets. Wide anti-scratch visor prepared for the anti-fog system, Pinlock Max Vision, and interior sun visor.</p>
+            <h2>Specifications</h2>
+            <ul>
+              <li>Materials: HPFC</li>
+              <li>Weight: 1400 (±50 gr.)</li>
+              <li>Shell: 4</li>
+              <li>Certified ECE 22.06</li>
+              <li>Emergency Release System</li>
+              <li>Micrometric Metal Buckle</li>
+              <li>Multi-Density EPS</li>
+              <li>Reinforced Chin Strap</li>
+              <li>Top Vents</li>
+              <li>Exhaust Vents</li>
+              <li>Channelled EPS</li>
+              <li>Removable and Washable</li>
+              <li>Breathable</li>
+              <li>Hypoallergenic</li>
+              <li>Laser-Cut Foam</li>
+              <li>Twin Visor System</li>
+              <li>Scratch Resistant</li>
+              <li>UV Resistant</li>
+              <li>Visor Lock System</li>
+              <li>Quick Release System</li>
+              <li>Certified ECE with Ps Mark</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="helmetModal4" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">AGV FULL FACE HELMET VISORS</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <h2>Description</h2>
+            <ul>
+              <li><strong>AGV CORSA R / PISTA GP HELMET - CLEAR</strong></li>
+              <ul>
+                <li>Replacement Spoiler for AGV Pista GP and Corsa R helmets.</li>
+              </ul>
+              <li><strong>AGV GT 2 HELMET VISOR</strong></li>
+              <ul>
+                <li>AGV GT 2 scratch-resistant, anti-fog polycarbonate visor with 100% protection from UV rays.</li>
+                <li><strong>Specifications:</strong></li>
+                <ul>
+                  <li>Visor replacement for:</li>
+                  <ul>
+                    <li>AGV K1 helmets</li>
+                    <li>AGV K3 SV helmets</li>
+                    <li>AGV K5 and K5 S helmets</li>
+                  </ul>
+                  <li>Note: Does not fit AGV K3 helmets.</li>
+                  <li>Product images are for illustrative purposes only and may differ from the actual product.</li>
+                </ul>
+              </ul>
+              <li><strong>AGV RACE-2 VISOR FOR PISTA/CORSA</strong></li>
+              <ul>
+                <li>The AGV Race 2 visor is for the following models:</li>
+                <ul>
+                  <li>Pista</li>
+                  <li>Corsa</li>
+                  <li>GT-Veloce</li>
+                </ul>
+                <li><strong>Specifications:</strong></li>
+                <ul>
+                  <li><strong>Features:</strong></li>
+                  <ul>
+                    <li>Anti-Scratch</li>
+                    <li>Double Anti-Fog Coating</li>
+                    <li>Tear-off System</li>
+                  </ul>
+                </ul>
+              </ul>
+              <li><strong>AGV K6S / K6 HELMET VISOR</strong></li>
+              <ul>
+                <li>Scratch-resistant shield/Visor compatible with AGV K6 S/K6 helmet.</li>
+              </ul>
+              <li><strong>AGV PISTA GP RR / PISTA GP R / CORSA R HELMET VISOR - CLEAR</strong></li>
+              <ul>
+                <li>Scratch-resistant shield compatible with:</li>
+                <ul>
+                  <li>Pista GP RR</li>
+                  <li>Pista GP R</li>
+                  <li>Corsa R</li>
+                </ul>
+                <li>Screws included for race use.</li>
+              </ul>
+              <li><strong>AGV X3000 HELMET VISOR</strong></li>
+              <ul>
+                <li>Anti-scratch shield compatible with the X3000 helmet.</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="helmetModal5" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">NOLAN N30-4 T CLASSIC HELMET</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <h2>Description</h2>
+            <p>The new helmet designed for the urban commuter, ideal for both motorcycle use and scooters, as well as for new forms of sustainable mobility. Its ventilation system, the result of years of research, is capable of providing elevated comfort even at lower speeds. The minimalist style of the N30-4T version makes it the ideal helmet for all urban uses.</p>
+
+            <h2>Specifications</h2>
+            <ul>
+              <li>n/ece 22-06</li>
+              <li>Microlock</li>
+              <li>Scratch resistant – goggle</li>
+              <li>“Clima Comfort” with eco-friendly fabric</li>
+              <li>Liner with innovative net construction</li>
+              <li>Evolved chin padding for practical use and comfort</li>
+              <li>Extreme Ventilation System (EVS)</li>
+              <li>Water and wind resistant cap (ready for)</li>
+            </ul>
+
+            <h3>Shell:</h3>
+            <ul>
+              <li>5 inner shell sizes: XXS-XS, S, M, L, XL-2XL</li>
+              <li>2 outer shell sizes: XXS-M, L-2XL</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="helmetModal6" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">LS2 FF353 HELMET SPOILER</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <h2>Description</h2>
+            <ul>
+              <li>LS2 Genuine Spare Part</li>
+              <li>Easy to Install</li>
+              <li>Fits in all Helmet Sizes of FF353 Model</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="container text-center my-5 p-4 bg-dark text-light rounded">
+      <h3>Exclusive Helmet Deals!</h3>
+      <p>Get the best protection for your rides. Limited-time offers available now!</p>
+      <a href="#" class="btn btn-warning btn-lg">Shop Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-light text-center py-3">
+      <p>&copy; 2025 Lapuk Garage. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
