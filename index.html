@@ -31,7 +31,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-          <img src="Logo.png" class="navbar-logo me-2">
+          <img style="width: 50px;height: 50px;" src="img/logo.png" class="navbar-logo me-2">
           <a class="navbar-brand" href="index.html">Lapuk Garage</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
               <span class="navbar-toggler-icon"></span>
@@ -52,10 +52,10 @@
                   <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Accessories</a>
                       <ul class="dropdown-menu bg-dark">
-                          <li><a class="dropdown-item text-light" href="Helmets.html">Helmets</a></li>
-                          <li><a class="dropdown-item text-light" href="Gloves.html">Gloves</a></li>
-                          <li><a class="dropdown-item text-light" href="Jacket.html">Jackets</a></li>
-                          <li><a class="dropdown-item text-light" href="MotorAccessories.html">Motor Accessories</a></li>
+                          <li><a class="dropdown-item text-light" href="helmets.html">Helmets</a></li>
+                          <li><a class="dropdown-item text-light" href="gloves.html">Gloves</a></li>
+                          <li><a class="dropdown-item text-light" href="jackets.html">Jackets</a></li>
+                          <li><a class="dropdown-item text-light" href="motoraccessories.html">Motor Accessories</a></li>
                       </ul>
                   </li>
                   
@@ -69,7 +69,7 @@
                   <li class="nav-item"><a class="nav-link" href="brands.html">Brands</a></li>
                   <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
               </ul>
-              <form class="d-flex">
+              <form class="d-flex" onsubmit="handleSearch(event)">
                   <input class="form-control me-2 bg-dark text-light" type="search" placeholder="Search">
                   <button class="btn btn-outline-light" type="submit">Search</button>
               </form>
@@ -77,26 +77,62 @@
       </div>
   </nav>
 
-    <div class="container p-5 text-center">
-      <h2 class="text-danger">Why Choose Lapuk Garage?</h2>
-      <div class="row">
-        <div class="col">
-          <h4>Quality Parts</h4>
-          <p>Only the best brands for top performance.</p>
-        </div>
-        <div class="col">
-          <h4>Expert Service</h4>
-          <p>Skilled mechanics for all your needs.</p>
-        </div>
-        <div class="col">
-          <h4>Affordable Prices</h4>
-          <p>Get the best deals for riders.</p>
-        </div>
+    <!-- Video Background with Logo and Shop Now Button -->
+    <div class="vid-container">
+      <video src="vids/vid-ad.mp4" autoplay muted loop></video>
+      <div class="vid-overlay"></div>
+      <div class="logo-container">
+          <img src="Lapuk Logo.png" alt="Lapuk Garage Logo">
       </div>
-    </div>
+      <button class="shop-now-btn btn btn-danger">Shop Now</button>
+  </div>
+
+  <!-- Featured Products -->
+  <section class="featured-products container my-5 bg-dark text-center">
+      <h2 class="text-danger">Featured Products</h2>
+      <div class="row">
+          <div class="col-md-4">
+              <img src="v4engine2.png" class="product-img img-fluid" alt="High Performance Engine">
+              <h4>High Performance Engine</h4>
+              <p>Experience unmatched power and efficiency with our premium engines.</p>
+          </div>
+          <div class="col-md-4">
+              <img src="header-bg.png" class="product-img img-fluid" alt="Racing Helmet">
+              <h4>Racing Helmet</h4>
+              <p>Stay protected in style with our high-quality racing helmets.</p>
+          </div>
+          <div class="col-md-4">
+              <img src="GLOBE_EVO.png" class="product-img img-fluid" alt="Advanced Brake System">
+              <h4>Gloves</h4>
+              <p>Get superior stopping power with our advanced brake systems.</p>
+          </div>
+      </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose-us container my-5 bg-dark text-center">
+      <h2 class="text-danger">WHY CHOOSE LAPUK GARAGE?</h2>
+      <div class="row">
+          <div class="col-md-4">
+              <img src="main_rep_serv.png" class="icon-img img-fluid" alt="Quality Assurance">
+              <h4>Top Quality Parts</h4>
+              <p>We source only the best motorcycle parts to ensure durability and performance.</p>
+          </div>
+          <div class="col-md-4">
+              <img src="shipping.png" class="icon-img img-fluid" alt="Fast Shipping">
+              <h4>Fast & Reliable Shipping</h4>
+              <p>Get your orders delivered quickly with our reliable shipping service.</p>
+          </div>
+          <div class="col-md-4">
+              <img src="customercare.png" class="icon-img img-fluid" alt="Customer Support">
+              <h4>24/7 Customer Support</h4>
+              <p>Our team is always ready to assist you with any questions or concerns.</p>
+          </div>
+      </div>
+  </section>
 
     <!-- Footer -->
-    <footer class="footer text-light text-center">
+    <footer class="footer text-light text-center py-3">
       <p>&copy; 2025 Lapuk Garage. All Rights Reserved.</p>
     </footer>
   </body>
