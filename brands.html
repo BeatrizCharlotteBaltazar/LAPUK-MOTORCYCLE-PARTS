@@ -66,6 +66,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
+            <img style="width: 50px;height: 50px;" src="img/logo.png" class="navbar-logo me-2">
             <a class="navbar-brand" href="index.html">Lapuk Garage</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -73,18 +74,46 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="parts.html">Parts</a></li>
-                    <li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Parts</a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item text-light" href="engines.html">Engines</a></li>
+                            <li><a class="dropdown-item text-light" href="brakes.html">Brakes</a></li>
+                            <li><a class="dropdown-item text-light" href="suspension.html">Suspension</a></li>
+                            <li><a class="dropdown-item text-light" href="tires.html">Tires</a></li>
+                            <li><a class="dropdown-item text-light" href="lights.html">Lights</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Accessories</a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item text-light" href="helmets.html">Helmets</a></li>
+                            <li><a class="dropdown-item text-light" href="gloves.html">Gloves</a></li>
+                            <li><a class="dropdown-item text-light" href="jackets.html">Jackets</a></li>
+                            <li><a class="dropdown-item text-light" href="motoraccessories.html">Motor Accessories</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="services.html" data-bs-toggle="dropdown">Services</a>
+                      <ul class="dropdown-menu bg-dark">
+                          <li><a class="dropdown-item text-light" href="service_main.html">Maintenance</a></li>
+                          <li><a class="dropdown-item text-light" href="service_repair.html">Repair</a></li>
+                      </ul>
+                  </li>
                     <li class="nav-item"><a class="nav-link active" href="brands.html">Brands</a></li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
                 </ul>
+                <form class="d-flex" onsubmit="handleSearch(event)">
+                    <input class="form-control me-2 bg-dark text-light" type="search" placeholder="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
             </div>
         </div>
     </nav>
 
     <div class="brand-container">
-        <h2>Our Brands</h2>
+        <h2>Partner Brands</h2>
         <img src="img/image_map_brand.png" alt="imagemapbrands" usemap="#imagemap" class="img-fluid rounded">
         <map name="imagemap">
             <area shape="rect" coords="106,566,503,658" alt="SMOK" href="https://web.facebook.com/@smokmotoph/?_rdc=1&_rdr#">
