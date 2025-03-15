@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Motorcycle Parts & Accessories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="MotorAccessories.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <!--General nav Container-->
+        <div class="container-fluid p-0"> <!-- Removed padding to fit full width -->
+            
+            <a class="navbar-brand" href="Home.html">Lapuk Garage</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Nav-menu Container-->
+            <div class="collapse navbar-collapse w-100" id="navbarNav">
+                <ul class="navbar-nav me-auto"> <!-- Ensures full width -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="partsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Parts</a>
+                        <ul class="dropdown-menu" aria-labelledby="partsDropdown">
+                            <li><a class="dropdown-item" href="engines.html">Engines</a></li>
+                            <li><a class="dropdown-item" href="brakes.html">Brakes</a></li>
+                            <li><a class="dropdown-item" href="suspension.html">Suspension</a></li>
+                            <li><a class="dropdown-item" href="tires.html">Tires</a></li>
+                            <li><a class="dropdown-item" href="lights.html">Lights</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Accessories</a>
+                        <ul class="dropdown-menu" aria-labelledby="accessoriesDropdown">
+                            <li><a class="dropdown-item" href="Helmets.html">Helmets</a></li>
+                            <li><a class="dropdown-item" href="Gloves.html">Gloves</a></li>
+                            <li><a class="dropdown-item" href="Jacket.html">Jackets</a></li>
+                            <li><a class="dropdown-item" href="MotorAccessories.html">Motor Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="service_main.html">Maintenance</a></li>
+                            <li><a class="dropdown-item" href="service_repair.html">Repairs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Brands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+
+                <!--Search Bar-->
+                <form class="d-flex ">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--header background-->
+    <section class="header-bg_container">
+        <div class="header_text">
+            <h2> Maintain Your Ride, Own the Road!</h2>
+            <p>Regular upkeep isn’t just a choice—it’s the key to performance and safety. 
+               Keep your motorcycle in top shape and enjoy every ride worry-free! </p> 
+        </div>
+
+        <div class="header_img">
+          <img src="pics/header-bike.png" alt="">  
+        </div>
+    </section>
+        
+
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4"> EXPERIENCE THE BEST</h2>
+
+        <!-- Carousel for Helmet Showcase -->
+        <div id="helmetCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#helmetCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#helmetCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#helmetCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img src="pics/care1.jpg" class="d-block w-100" alt="Helmet 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Longevity Care</h5>
+                        <p>Protect your bike from wear and tear for years of reliable riding.</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="pics/care2.jpg" class="d-block w-100" alt="Helmet 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Performance Check</h5>
+                        <p>Optimize your motorcycle’s power and efficiency with proper upkeep.</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="pics/care3.jpg" class="d-block w-100" alt="Helmet 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Weather Protection</h5>
+                        <p>Shield your bike from the elements to prevent damage and corrosion.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#helmetCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>`
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#helmetCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Helmet Categories -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Helmet Types</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pics/chainCareKIt.png" class="card-img-top" alt="IPONE MOTORCYCLE CHAIN & GREASE CLEANER OFF-ROAD PACK">
+                    <div class="card-body">
+                        <h5 class="card-title">IPONE MOTORCYCLE CHAIN & GREASE CLEANER OFF-ROAD PACK</h5>
+                        <p class="card-text">Effective and convenient, designed for deep cleaning and optimal chain maintenance in off-road conditions.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helmetModal1">View More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pics/AquatexCover.png" class="card-img-top" alt="OXFORD AQUATEX COVER">
+                    <div class="card-body">
+                        <h5 class="card-title">OXFORD AQUATEX COVER</h5>
+                        <p class="card-text">Durable and waterproof, ideal for protecting motorcycles from rain and dust.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helmetModal2">View More</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pics/rainoffSpray.png" class="card-img-top" alt="IPONE MOTORCYCLE HELMET VISOR RAIN-OFF REPELLENT SPRAY(100ML)">
+                    <div class="card-body">
+                        <h5 class="card-title">IPONE MOTORCYCLE HELMET VISOR RAIN-OFF REPELLENT SPRAY(100ML)</h5>
+                        <p class="card-text">Water-repellent and anti-smudge, ensuring clear vision in rainy conditions.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helmetModal3">View More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pics/throttleAssist.png" class="card-img-top" alt="OXFORD CRUISE THROTTLE ASSIST">
+                    <div class="card-body">
+                        <h5 class="card-title">OXFORD CRUISE THROTTLE ASSIST</h5>
+                        <p class="card-text">Ergonomic and adjustable, designed for reduced wrist fatigue on long rides.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helmetModal4">View More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pics/net.png" class="card-img-top" alt="OXFORD OX658 BRIGHT NET">
+                    <div class="card-body">
+                        <h5 class="card-title">OXFORD OX658 BRIGHT NET</h5>
+                        <p class="card-text">Stretchable and secure, perfect for holding luggage on motorcycle rides.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helmetModal5">View More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pics/toolkit.png" class="card-img-top" alt="OXFORD BIKE TOOLKIT">
+                    <div class="card-body">
+                        <h5 class="card-title">OXFORD BIKE TOOLKIT</h5>
+                        <p class="card-text">Compact and versatile, perfect for on-the-go motorcycle maintenance and repairs.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helmetModal6">View More</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <!-- Helmet Details Modals -->
+    <div class="modal fade" id="helmetModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">IPONE MOTORCYCLE CHAIN & GREASE CLEANER OFF-ROAD PACK
+
+</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Description</h2>
+                    <p><strong>COMPLETE CHAIN MAINTENANCE FOR OFF-ROAD MOTORCYCLES</strong></p>
+                    <p>
+                        The OFF-ROAD CHAIN CARE PACK is designed for the complete maintenance of your chain. 
+                        It includes a highly effective chain degreaser to remove even the most stubborn grease, 
+                        a durable chain brush for thorough cleaning, and an advanced off-road chain grease with a non-stick formulation.
+                    </p>
+                    <p>
+                        With the OFF-ROAD CHAIN CARE PACK, you’ll have everything you need to clean and maintain your chain efficiently.
+                    </p>
+
+                    <h2>Contents</h2>
+                    <ul>
+                        <li><strong>1 x Chain Cleaner (750ml)</strong> – Effectively removes grease and dirt buildup on your chain.</li>
+                        <li><strong>1 x X-Trem Chain Off-Road Chain Grease (750ml)</strong> – Specially designed for off-road motorcycles, providing long-lasting lubrication and protection.</li>
+                        <li><strong>1 x Chain Brush</strong> – Helps clean your chain quickly and efficiently while reducing chain cleaner consumption.</li>
+                    </ul>
+
+                    <h2>Features</h2>
+                    <h3>Chain Cleaner</h3>
+                    <ul>
+                        <li>Effectively dissolves grease and dirt.</li>
+                        <li>Optimized for chain maintenance.</li>
+                    </ul>
+
+                    <h3>X-Trem Chain Off-Road Grease</h3>
+                    <ul>
+                        <li>Water-resistant and designed for off-road use (Motocross, Enduro, Trials, etc.).</li>
+                        <li>Forms a protective film to prevent mud, sand, and dust from sticking between the links.</li>
+                        <li>Ensures optimal adhesion to the chain and dries quickly to prevent fling-off.</li>
+                        <li>Compatible with all types of O-rings.</li>
+                    </ul>
+
+                    <h3>Chain Brush</h3>
+                    <ul>
+                        <li>Improves cleaning efficiency.</li>
+                        <li>Reduces chain cleaner consumption.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="helmetModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">OXFORD AQUATEX COVER</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Description</h2>
+                    <p><strong>Oxford Aquatex Cover – Essential Protection for Your Motorcycle</strong></p>
+                    <p>
+                        The Oxford Aquatex Cover provides reliable protection against rain, dust, and other environmental elements, 
+                        ensuring your motorcycle stays clean and dry when not in use.
+                    </p>
+
+                    <h2>Product Details</h2>
+                    <ul>
+                        <li><strong>Durable Construction:</strong> Made from double-stitched nylon for enhanced strength and longevity.</li>
+                        <li><strong>Weather-Resistant:</strong> Features double polyurethane coatings for superior protection against rain and dust.</li>
+                        <li><strong>Full Coverage:</strong> Provides complete exterior and interior protection for your motorcycle.</li>
+                        <li><strong>Secure Fit:</strong> Equipped with an elasticated bottom and a belly strap to ensure a snug fit, even in windy conditions.</li>
+                        <li><strong>Compact Storage:</strong> Easily folds away when not in use for convenient storage.</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="helmetModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">IPONE MOTORCYCLE HELMET VISOR RAIN-OFF REPELLENT SPRAY(100ML)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Description</h2>
+                    <p><strong>VISOR RAINOFF – Enhanced Visibility in Rainy Conditions</strong></p>
+                    <p>
+                        VISOR RAINOFF is a highly effective rain repellent spray designed for motorcycle visors. 
+                        It instantly disperses water, improving visibility and ensuring a clearer ride in wet conditions.
+                    </p>
+
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li><strong>Powerful Rain Repellent:</strong> Effectively repels rain from your visor and helmet bubble.</li>
+                        <li><strong>Tested in Extreme Conditions:</strong> Proven to work even in heavy rainfall.</li>
+                        <li><strong>Easy & Quick Application:</strong> Comes with an integrated sprayer for effortless use.</li>
+                        <li><strong>Streak-Free Formula:</strong> Leaves no marks or residue on the visor.</li>
+                        <li><strong>Anti-Fog & Anti-Glare:</strong> Reduces fogging and glare from headlights for a safer ride.</li>
+                        <li><strong>Convenient & Portable:</strong> Compact size for easy storage and on-the-go use.</li>
+                    </ul>
+
+                    <h2>Specifications</h2>
+                    <ul>
+                        <li>Repels water from helmet visor</li>
+                        <li>Improves visibility by shedding water</li>
+                        <li>Leaves no marks or streaks</li>
+                        <li>Easy spray application</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="helmetModal4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">OXFORD CRUISE THROTTLE ASSIST</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Description</h2>
+                    <p><strong>Oxford Cruise Throttle Assist – Reduce Wrist Fatigue on Long Rides</strong></p>
+                    <p>
+                        The Oxford Cruise Throttle Assist is designed to ease wrist and hand strain during long journeys. 
+                        It helps maintain a steady throttle position, making cruising on motorways and major roads more comfortable.
+                    </p>
+
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li><strong>Effortless Throttle Control:</strong> Reduces wrist fatigue by assisting throttle operation.</li>
+                        <li><strong>Perfect for Long Rides:</strong> Ideal for cruising on motorways and major roads.</li>
+                        <li><strong>Easy to Fit & Remove:</strong> No tools required for quick installation.</li>
+                        <li><strong>Universal Fit:</strong> Adjustable to fit most motorcycles and scooters.</li>
+                    </ul>
+
+                    <h2>Specifications</h2>
+                    <ul>
+                        <li>Fits 28mm-36mm grips (2 sizes available)</li>
+                        <li>Lightweight and durable design</li>
+                        <li>Enhances riding comfort for extended journeys</li>
+                    </ul>
+
+
+                        <li><strong>AGV RACE-2 VISOR FOR PISTA/CORSA</strong></li>
+                        <ul>
+                            <li>The AGV Race 2 visor is for the following models:</li>
+                            <ul>
+                                <li>Pista</li>
+                                <li>Corsa</li>
+                                <li>GT-Veloce</li>
+                            </ul>
+                            <li><strong>Specifications:</strong></li>
+                            <ul>
+                                <li><strong>Features:</strong></li>
+                                <ul>
+                                    <li>Anti-Scratch</li>
+                                    <li>Double Anti-Fog Coating</li>
+                                    <li>Tear-off System</li>
+                                </ul>
+                            </ul>
+                        </ul>
+
+                        <li><strong>AGV K6S / K6 HELMET VISOR</strong></li>
+                        <ul>
+                            <li>Scratch-resistant shield/Visor compatible with AGV K6 S/K6 helmet.</li>
+                        </ul>
+
+                        <li><strong>AGV PISTA GP RR / PISTA GP R / CORSA R HELMET VISOR - CLEAR</strong></li>
+                        <ul>
+                            <li>Scratch-resistant shield compatible with:</li>
+                            <ul>
+                                <li>Pista GP RR</li>
+                                <li>Pista GP R</li>
+                                <li>Corsa R</li>
+                            </ul>
+                            <li>Screws included for race use.</li>
+                        </ul>
+
+                        <li><strong>AGV X3000 HELMET VISOR</strong></li>
+                        <ul>
+                            <li>Anti-scratch shield compatible with the X3000 helmet.</li>
+                        </ul>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="helmetModal5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">OXFORD OX658 BRIGHT NET</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Description</h2>
+                    <p><strong>Reflective Elastic Cargo Net – Secure Your Gear with Visibility & Strength</strong></p>
+                    <p>
+                        This high-quality cargo net is designed for secure transportation of your belongings while enhancing visibility 
+                        in low-light conditions. Its strong elasticated webbing and hardened steel hooks provide a reliable hold for various loads.
+                    </p>
+
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li><strong>Enhanced Visibility:</strong> Unique reflective construction for increased safety in low-light conditions.</li>
+                        <li><strong>Strong & Flexible:</strong> Made from durable elastic webbing to secure different types of cargo.</li>
+                        <li><strong>Secure Attachment:</strong> Hardened steel hooks ensure a firm grip and prevent shifting during transit.</li>
+                        <li><strong>Universal Fit:</strong> Ideal for motorcycles, bicycles, and other transport needs.</li>
+                    </ul>
+
+                    <h2>Specifications</h2>
+                    <ul>
+                        <li>Material: Elastic webbing with reflective elements</li>
+                        <li>Hooks: Hardened steel for extra security</li>
+                        <li>Size: 15” x 15” (38.1 cm x 38.1 cm)</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="helmetModal6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">OXFORD BIKE TOOLKIT</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Description</h2>
+                    <p><strong>28-Piece Motorcycle Tool Kit</strong></p>
+                    <p>
+                        This comprehensive 28-piece tool kit is designed specifically for motorcycle maintenance and repairs. 
+                        Featuring ergonomically designed tools with soft gel handles for comfort, each tool is crafted from 
+                        high-quality carbon steel for durability. The compact storage case ensures easy portability and 
+                        can conveniently fit under your rear seat, folding down to just <strong>18cm x 10.5cm x 4cm</strong>.
+                    </p>
+
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li><strong>28-Piece Kit:</strong> Essential tools for motorcycle maintenance.</li>
+                        <li><strong>Ergonomic Design:</strong> Soft gel handles for a comfortable grip.</li>
+                        <li><strong>High-Quality Construction:</strong> Made from durable carbon steel.</li>
+                        <li><strong>Compact & Portable:</strong> Includes a storage case that fits under your seat.</li>
+                    </ul>
+
+                    <h2>Kit Includes</h2>
+                    <ul>
+                        <li>10pc screwdriver bit set</li>
+                        <li>Extension bar</li>
+                        <li>5pc hex key set (6mm, 5mm, 4mm, 3mm, 2mm)</li>
+                        <li>Wire cutters</li>
+                        <li>Screwdriver handle</li>
+                        <li>Needle nose pliers</li>
+                        <li>7 sockets: 5mm, 6mm, 7mm, 8mm, 9mm, 10mm, 11mm</li>
+                        <li>2 x electrical screwdrivers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="container text-center my-5 p-4 bg-dark text-light rounded">
+        <h3>Exclusive Maintenance Deals!</h3>
+        <p>Keep your motorcycle running smoothly with top-quality parts and essentials. Limited-time offers—shop now!</p>
+        <a href="#" class="btn btn-warning btn-lg">Shop Now</a>
+    </section>
+    
+</body>
+</html>

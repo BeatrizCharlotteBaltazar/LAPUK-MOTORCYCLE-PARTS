@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Motorcycle Parts & Accessories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Jacket.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <!--General nav Container-->
+        <div class="container-fluid p-0"> <!-- Removed padding to fit full width -->
+            
+            <a class="navbar-brand" href="Home.html">Lapuk Garage</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Nav-menu Container-->
+            <div class="collapse navbar-collapse w-100" id="navbarNav">
+                <ul class="navbar-nav me-auto"> <!-- Ensures full width -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="partsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Parts</a>
+                        <ul class="dropdown-menu" aria-labelledby="partsDropdown">
+                            <li><a class="dropdown-item" href="engines.html">Engines</a></li>
+                            <li><a class="dropdown-item" href="brakes.html">Brakes</a></li>
+                            <li><a class="dropdown-item" href="suspension.html">Suspension</a></li>
+                            <li><a class="dropdown-item" href="tires.html">Tires</a></li>
+                            <li><a class="dropdown-item" href="lights.html">Lights</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Accessories</a>
+                        <ul class="dropdown-menu" aria-labelledby="accessoriesDropdown">
+                            <li><a class="dropdown-item" href="Helmets.html">Helmets</a></li>
+                            <li><a class="dropdown-item" href="Gloves.html">Gloves</a></li>
+                            <li><a class="dropdown-item" href="Jacket.html">Jackets</a></li>
+                            <li><a class="dropdown-item" href="MotorAccessories.html">Motor Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="service_main.html">Maintenance</a></li>
+                            <li><a class="dropdown-item" href="service_repair.html">Repairs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Brands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+
+                <!--Search Bar-->
+                <form class="d-flex ">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--header background-->
+    <section class="header-bg_container">
+        <div class="header_text">
+            <h2> Ride Protected, Stay Comfortable!</h2>
+            <p>Your jacket isn’t just for style—it’s your shield against the elements. 
+                Stay safe, ride with confidence, and embrace every journey! </p> 
+        </div>
+
+        <div class="header_img">
+          <img src="pics/header_jacket.png" alt="">  
+        </div>
+    </section>
+        
+
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4"> EXPERIENCE THE BEST</h2>
+
+        <!-- Carousel for Helmet Showcase -->
+        <div id="helmetCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#helmetCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#helmetCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#helmetCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pics/jacket1.jpg" class="d-block w-100" alt="Helmet 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>All-Season Motorcycle Jacket</h5>
+                        <p>Stay comfortable in any weather, rain or shine.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="pics/jacket2.jpg" class="d-block w-100" alt="Helmet 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Armored Riding Jacket</h5>
+                        <p>Built-in protection for maximum safety on the road.</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="pics/jacket3.jpg" class="d-block w-100" alt="Helmet 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lightweight Touring Jacket</h5>
+                        <p>Perfect balance of comfort, durability, and style.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#helmetCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>`
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#helmetCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Helmet Categories -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Jacket Types</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pics/RACER MESH.png" class="card-img-top" alt="TAICHI RSJ336 RACER MESH JACKET">
+                    <div class="card-body">
+                        <h5 class="card-title">TAICHI RSJ336 RACER MESH JACKET</h5>
+                        <p class="card-text">Lightweight and breathable, perfect for sporty summer rides.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helmetModal1">View More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pics/velotura.png" class="card-img-top" alt="MACNA VELOTURA MOTORCYCLE MESH JACKET">
+                    <div class="card-body">
+                        <h5 class="card-title">MACNA VELOTURA MOTORCYCLE MESH JACKET</h5>
+                        <p class="card-text">Lightweight and ventilated, ideal for comfortable summer and city rides.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helmetModal2">View More</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pics/neo.png" class="card-img-top" alt="KOMINE JK-1623 PROTECT FM JACKET NEO">
+                    <div class="card-body">
+                        <h5 class="card-title">KOMINE JK-1623 PROTECT FM JACKET NEO</h5>
+                        <p class="card-text">Protective and breathable, designed for safe and comfortable all-season riding.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helmetModal3">View More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pics/scrambler.png" class="card-img-top" alt="KOMINE JK-180 HEAVY MESH SCRAMBLER JACKET">
+                    <div class="card-body">
+                        <h5 class="card-title">KOMINE JK-180 HEAVY MESH SCRAMBLER JACKET</h5>
+                        <p class="card-text">Durable and well-ventilated, perfect for scrambler-style and summer rides.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helmetModal4">View More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pics/airMan.png" class="card-img-top" alt="LS2 GARDA AIR MOTORCYCLE MAN JACKET">
+                    <div class="card-body">
+                        <h5 class="card-title">LS2 GARDA AIR MOTORCYCLE MAN JACKET</h5>
+                        <p class="card-text">Lightweight and breathable, designed for comfortable touring and adventure rides.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helmetModal5">View More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pics/USWE.png" class="card-img-top" alt="USWE WIND GRAVEL JACKET">
+                    <div class="card-body">
+                        <h5 class="card-title">USWE WIND GRAVEL JACKET</h5>
+                        <p class="card-text">Lightweight and windproof, perfect for gravel and all-weather adventure rides.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helmetModal6">View More</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <!-- Helmet Details Modals -->
+    <div class="modal fade" id="helmetModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">TAICHI RSJ336 RACER MESH JACKET</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Description</h2>
+                    <p>
+                        The Racer Mesh Jacket is designed for sports bikes. Combining tough textile and mesh, 
+                        it balances strength and breathability, making it a great choice for a basic riding jacket. 
+                        You can upgrade it with optional CE Level 2 armor for the shoulders, elbows, and back.
+                    </p>
+
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Metallic print color in BLACK FOIL</li>
+                        <li>Stretch panel for enhanced flexibility</li>
+                        <li>CE Level 1 hard shell protectors (shoulder, elbow)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="helmetModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">MACNA VELOTURA MOTORCYCLE MESH JACKET</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Description</h2>
+                    <p>
+                        The most accessible jacket for riders in hot conditions.
+                    </p>
+                    <p>
+                        The Velotura is designed for warm riding conditions with a ton of 3D-mesh fabric to ensure 
+                        enough airflow past your body, with impact areas like elbows and shoulders being the exception. 
+                        The fit of the jacket can easily be adjusted by Velcro at the cuffs and hips.
+                    </p>
+                    <p>
+                        To maintain that perfect fit, we’ve fitted our Belt Loop; a strong piece of webbing that enables 
+                        easy connection between your jacket and belt, preventing the jacket from creeping up. 
+                        Follow the Belt Loop all the way up, and you’ll find the Coat Hanger that’s designed to carry 
+                        the weight of a motorcycle jacket.
+                    </p>
+                    <p><strong>Note:</strong> Product color may slightly vary due to photographic lighting sources or your monitor settings.</p>
+
+                    <h2>Specification</h2>
+
+                    <h3>Functionality</h3>
+                    <ul>
+                        <li>Adjustable hip Velcro</li>
+                        <li>Adjustable cuff</li>
+                    </ul>
+
+                    <h3>Materials</h3>
+                    <ul>
+                        <li>Fybrex</li>
+                        <li>Mesh</li>
+                        <li>3D Mesh</li>
+                    </ul>
+
+                    <h3>Safety</h3>
+                    <ul>
+                        <li>Back protector prepared</li>
+                        <li>Elbow protection</li>
+                        <li>Shoulder protection</li>
+                    </ul>
+
+                    <h3>Style</h3>
+                    <ul>
+                        <li>City</li>
+                    </ul>
+
+                    <h3>Suitable for</h3>
+                    <ul>
+                        <li>Men</li>
+                    </ul>
+
+                    <h3>Technology</h3>
+                    <ul>
+                        <li>Belt Loop</li>
+                        <li>Coat Hanger Lite</li>
+                    </ul>
+
+                    <h3>Weather Type</h3>
+                    <ul>
+                        <li>Hot</li>
+                    </ul>
+
+                    <h3>Weight</h3>
+                    <ul>
+                        <li>1.58 kg</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="helmetModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">KOMINE JK-1623 PROTECT FM JACKET NEO</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Description</h2>
+                    <p>
+                        A full-protection riding mesh jacket equipped with standard chest, shoulder, elbow, and back protectors. 
+                        Designed for comfort, it features a three-dimensional pattern to support a natural riding posture.
+                    </p>
+
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Equipped with plastic sliders</li>
+                        <li>CE Standard hard protectors for shoulders and elbows (S-6XLB)</li>
+                        <li>CE Standard Level 2 soft protectors for shoulders and elbows (WM/WL)</li>
+                        <li>Adjusters to control flapping</li>
+                        <li>EVAPad for spine protection (standard equipment)</li>
+                        <li>Reflector for improved nighttime visibility</li>
+                        <li>Compatible with a hard-type back protector (sold separately)</li>
+                        <li>Anti-counterfeiting 4D label</li>
+                    </ul>
+
+                    <h2>Specifications</h2>
+                    <ul>
+                        <li>Standard equipment protectors for shoulders, elbows, and spine</li>
+                        <li>Highly breathable mesh material</li>
+                        <li>Draping design for increased mobility</li>
+                        <li>Standard chest protector included</li>
+                        <li>Chest protector models SK-689, SK-619, or SK-682 as standard equipment</li>
+                        <li>Anti-counterfeit label with special hologram technology</li>
+                        <li>CE Standard EN1621-1 Level 2 certification</li>
+                        <li>CE Standard EN 1621-1 (Level 2) protectors for elbows and knees: Komine CE Elbow/Knee</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="helmetModal4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">KOMINE JK-180 HEAVY MESH SCRAMBLER JACKET</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Description</h2>
+                    <p>
+                        A half-mesh jacket made of heavy mesh that is both breathable and strong. 
+                        It is fully protective and features CE Level 2 soft protectors on the shoulders and elbows. 
+                        Strategically placed stretch panels ensure an optimal fit and freedom of movement for riding.
+                    </p>
+
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Combination of textile and mesh for durability and ventilation</li>
+                        <li>3D pattern for a comfortable riding posture</li>
+                        <li>Reflective piping on the chest, arms, and back for improved nighttime visibility</li>
+                        <li>CE Level 2 soft protectors on shoulders and elbows</li>
+                        <li>Chest protector included:
+                            <ul>
+                                <li>[M~5XLB] SK-689 (hard type)</li>
+                                <li>[WM~WL] SK-682 (hard type)</li>
+                            </ul>
+                        </li>
+                        <li>Shoulder protector: [WM~5XLB] SK-812 (soft type / CE Level 2)</li>
+                        <li>Elbow protector:
+                            <ul>
+                                <li>[WM~WL] KOMINE SK-811</li>
+                                <li>[M~5XLB] KOMINE SK-810 (soft type / CE Level 2)</li>
+                            </ul>
+                        </li>
+                        <li>Spine protector: [WM~5XLB] SK-815</li>
+                        <li>Anti-counterfeiting 4D label for authenticity</li>
+                    </ul>
+
+                    <h2>Materials</h2>
+                    <ul>
+                        <li><strong>Outer Shell:</strong> Polyester, Polyethylene, Spandex, Nylon, EVA, Others</li>
+                        <li><strong>Lining:</strong> Polyester</li>
+                    </ul>
+
+                    <h2>Protection</h2>
+                    <ul>
+                        <li>Shoulder protector</li>
+                        <li>Elbow protector</li>
+                        <li>Back protector</li>
+                        <li>Chest protector</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="helmetModal5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">LS2 GARDA AIR MOTORCYCLE MAN JACKET</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Description</h2>
+                    <p>
+                        Its predecessor quickly developed a name for itself as one of the premier go-to lightweight summer jackets with exceptional airflow. 
+                        The LS2 Garda Air Jacket takes this experience and feedback from customers to refine the jacket further. 
+                        Huge mesh panels guarantee you'll stay as cool as possible in the summer heat. 
+                        While CE-certified armor at the shoulders and elbows will keep you confident on the road (with room for an optional chest & back protector sold separately). 
+                    </p>
+                    
+                    <h2>Specifications</h2>
+                    <ul>
+                        <li>80% mesh coverage for maximum ventilation in hot weather</li>
+                        <li>Mesh fabric with a soft texture, high abrasion resistance, breathability, anti-scratch, and wrinkle recovery</li>
+                        <li>Ripstop fabric construction for softness with strong tear and abrasion resistance</li>
+                        <li>Titanium YKK Vislon front zipper with Velcro flap at the bottom hem to prevent fuel tank scratches</li>
+                        <li>Adjustment tabs at upper arms and bottom hem for a customized fit</li>
+                        <li>Snap button cuff adjustment</li>
+                        <li>Two external hand pockets with zippers for safe and convenient storage</li>
+                        <li>Reflective details at the front & back to increase visibility and safety at night</li>
+                        <li>100% mesh liner and ventilated protectors</li>
+                        <li>Liner with cooling fabric featuring menthol derivatives for evaporative cooling</li>
+                        <li>Connection belt loop with contrast color</li>
+                    </ul>
+                    
+                    <h2>Protection</h2>
+                    <ul>
+                        <li>Safety stitching in high-risk zones</li>
+                        <li>Removable CE Shoulder & Elbow Protectors (EN1621-1: 2012 Level 1)</li>
+                        <li>Elbow protector pocket with adjustable system for two protector positions</li>
+                        <li>Optional LS2 CE Chest Protector & LS2 851 Level 2 Back Protector (sold separately)</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="helmetModal6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">USWE WIND GRAVEL JACKET</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Description</h2>
+                    <p><strong>LIGHTWEIGHT, WINDPROOF, AND WATER REPELLENT FOR THE FAST MOUNTAIN BIKER AND GRAVEL RIDER</strong></p>
+                    <p>A true gravel and XC MTB jacket with no cut corners.</p>
+                    <p>
+                        When we designed the Wind Jacket, we knew a true gravel and XC MTB jacket must be breathable and easily packable. 
+                        The jacket needs to endure long rides while protecting you against any weather nature can throw at you. 
+                        And believe us when we say, the Wind Jacket cuts no corners.
+                    </p>
+                    
+                    <h3>Our Choice of Fabrics</h3>
+                    <p>
+                        The premium Italian fabrics offer the perfect balance between durability and low weight, making them ideal for long-duration MTB or gravel rides. 
+                        The water-repellent coating ensures you stay dry and is PCR-free, meaning no harmful substances were used in production.
+                    </p>
+                    
+                    <h3>The Key Features</h3>
+                    <ul>
+                        <li>Ventilated mesh panels under the arms for enhanced breathability</li>
+                        <li>Elastic bottom sleeve to keep the jacket securely in place</li>
+                        <li>Zippered side pocket for convenient storage</li>
+                    </ul>
+                    
+                    <h3>Why It Stands Out</h3>
+                    <p>
+                        The Wind Jacket’s protection against wind and weather, combined with its breathability, ensures comfort on any ride. 
+                        If you're looking for a reliable kit that allows you to go the distance in various conditions, the Wind Jacket is your perfect choice.
+                    </p>
+                    
+                    <h2>Specifications</h2>
+                    <h3>Highlights:</h3>
+                    <ul>
+                        <li>Lightweight and windproof material</li>
+                        <li>Ventilated mesh panels under the arms</li>
+                        <li>Premium Italian materials</li>
+                        <li>Elastic at the bottom sleeve for a secure fit</li>
+                        <li>Reflective Ikon print on the back for added visibility</li>
+                        <li>1 zippered pocket for storage</li>
+                    </ul>
+                    
+                    <h3>Fit:</h3>
+                    <ul>
+                        <li>Regular fit</li>
+                    </ul>
+                    
+                    <h3>Fabric:</h3>
+                    <ul>
+                        <li>100% PES with 100% PES membrane PFC-Free DWR coating</li>
+                    </ul>                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="container text-center my-5 p-4 bg-dark text-light rounded">
+        <h3>Exclusive Motorcycle Jacket Deals!</h3>
+        <p>Ride in style and safety with premium protection. Limited-time offers—shop now!</p>
+        <a href="#" class="btn btn-warning btn-lg">Shop Now</a>
+    </section>
+    
+</body>
+</html>

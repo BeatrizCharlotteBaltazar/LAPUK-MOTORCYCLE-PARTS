@@ -1,0 +1,337 @@
+/* Reset default margin & padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    color: white; /* Ensures text is readable */
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* Video Background Container */
+.vid-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.vid-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.vid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Logo Styling */
+.logo-container {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+}
+.logo-container img {
+    max-width: 300px;
+    height: auto;
+}
+
+/* Shop Now Button */
+.shop-now-btn {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d8031c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s ease-in-out;
+}
+.shop-now-btn:hover {
+    background-color: #b32d3c;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 15px;
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8); /* Adds slight transparency */
+}
+
+/* Navbar Logo */
+.navbar-logo {
+    height: 100px;
+    width: auto;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-size: 40px;
+    font-weight: bold;
+    color: #d8031c;
+}
+
+/* Navbar Menu */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 10px 15px;
+    font-size: 18px;
+    transition: background 0.3s ease;
+    margin-right: 2vw;
+    border-radius: 5px;
+}
+
+/* Navbar Link Hover */
+.navbar-nav .nav-link:hover {
+    background-color: #444;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #222;
+    border: none;
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Show dropdown on hover for larger screens */
+@media (min-width: 992px) {
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+/* Dropdown Items */
+.dropdown-item {
+    color: white;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+/* Dropdown Item Hover */
+.dropdown-item:hover {
+    background-color: #444;
+}
+
+/* Search Bar */
+.form-control {
+    border-radius: 20px;
+}
+
+.btn-outline-light {
+    border-radius: 20px;
+    border-color: white;
+    color: white;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: #333;
+}
+
+/* Hero Section Text */
+.text-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Heading */
+.heading {
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #d8031c;
+}
+
+/* Subheading */
+.subheading {
+    font-size: 18px;
+    color: #b32d3c;
+    font-weight: 900;
+}
+
+/* General Section Styling */
+section {
+    text-align: center;
+    padding: 16px;
+    line-height: 2em;
+    background: white;
+}
+
+/* Featured Products Section */
+.featured-products {
+    text-align: center;
+    padding: 50px 0;
+    background: #111; /* Matches overall theme */
+}
+
+.featured-products h2 {
+    margin-bottom: 30px;
+    color: #d8031c;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Grid Layout */
+.featured-products .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* More spacing between columns */
+    flex-wrap: wrap; /* Makes it responsive */
+}
+
+.featured-products .col-md-4 {
+    flex: 1 1 300px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Product Image */
+.featured-products img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: #000;
+    padding: 10px;
+}
+
+/* Product Name */
+.featured-products h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Product Description */
+.featured-products p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Button Styles */
+.featured-products .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background-color: #d8031c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.featured-products .btn:hover {
+    background-color: #a00215;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 60px 0;
+    background: #111;
+    color: rgb(161, 4, 4);
+    border-radius: 10px;
+}
+.why-choose-us h2 {
+    margin-bottom: 30px;
+}
+.why-choose-us .icon-img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    padding: 80px 20px;
+    background: #111;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-menu .dropdown-item {
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Ensure dropdowns open on click in mobile */
+    .nav-item.dropdown .dropdown-toggle::after {
+        display: none;
+    }
+
+    .featured-products .row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
