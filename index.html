@@ -31,76 +31,51 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Lapuk Garage</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="parts.html">Parts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="accessories.html">Accessories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="IMAGE MAP RAH.html">Brands</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactus.html">Contact Us</a>
-            </li>
-          </ul>
-        </div>
+          <img src="Logo.png" class="navbar-logo me-2">
+          <a class="navbar-brand" href="index.html">Lapuk Garage</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto">
+                  <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Parts</a>
+                      <ul class="dropdown-menu bg-dark">
+                          <li><a class="dropdown-item text-light" href="engines.html">Engines</a></li>
+                          <li><a class="dropdown-item text-light" href="brakes.html">Brakes</a></li>
+                          <li><a class="dropdown-item text-light" href="suspension.html">Suspension</a></li>
+                          <li><a class="dropdown-item text-light" href="tires.html">Tires</a></li>
+                          <li><a class="dropdown-item text-light" href="lights.html">Lights</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Accessories</a>
+                      <ul class="dropdown-menu bg-dark">
+                          <li><a class="dropdown-item text-light" href="Helmets.html">Helmets</a></li>
+                          <li><a class="dropdown-item text-light" href="Gloves.html">Gloves</a></li>
+                          <li><a class="dropdown-item text-light" href="Jacket.html">Jackets</a></li>
+                          <li><a class="dropdown-item text-light" href="MotorAccessories.html">Motor Accessories</a></li>
+                      </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="services.html" data-bs-toggle="dropdown">Services</a>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item text-light" href="service_main.html">Maintenance</a></li>
+                        <li><a class="dropdown-item text-light" href="service_repair.html">Repair</a></li>
+                    </ul>
+                </li>
+                  <li class="nav-item"><a class="nav-link" href="brands.html">Brands</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+              </ul>
+              <form class="d-flex">
+                  <input class="form-control me-2 bg-dark text-light" type="search" placeholder="Search">
+                  <button class="btn btn-outline-light" type="submit">Search</button>
+              </form>
+          </div>
       </div>
-    </nav>
-
-    <!-- Video Background with Logo and Shop Now Button -->
-    <header class="header">
-      <div class="vid-container">
-        <video
-          playsinline="playsinline"
-          src="vids/vid-ad.mp4"
-          autoplay="autoplay"
-          muted="muted"
-          loop="loop"
-        ></video>
-        <div class="vid-overlay"></div>
-        <div class="logo-container">
-          <img src="img/logo.png" alt="Lapuk Garage Logo" class="img-fluid" />
-        </div>
-        <button class="btn shop-now-btn">Shop Now</button>
-      </div>
-    </header>
-
-    <!-- Featured Products Section -->
-    <div class="container py-5 text-center">
-      <h2 class="text-danger">Featured Products</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="img/engines/v4engine.jpg" class="img-fluid" alt="Engine" />
-          <h4>High-Performance Engines</h4>
-        </div>
-        <div class="col-md-4">
-          <img src="img/pics/header-bg.png" class="img-fluid" alt="Helmet" />
-          <h4>Premium Helmets</h4>
-        </div>
-        <div class="col-md-4">
-          <img src="img/pics/GLOBE_EVO.png" class="img-fluid" alt="Gloves" />
-          <h4>Riding Gloves</h4>
-        </div>
-      </div>
-    </div>
+  </nav>
 
     <div class="container p-5 text-center">
       <h2 class="text-danger">Why Choose Lapuk Garage?</h2>
